@@ -1,5 +1,5 @@
 import * as Yup from "yup";
-
+// defining validation schema in seperate module
 export const authorValidationSchema = Yup.object().shape({
   name: Yup.string().required("Name is required"),
   bio: Yup.string().required("Bio is required"),

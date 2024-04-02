@@ -8,10 +8,10 @@ import {
 
 const Form = ({ type, initialData }) => {
   const { addAuthor, editAuthor, addBook, editBook } = useDataContext();
-
+  // setting validation schema based on form required
   const validationSchema =
     type === "author" ? authorValidationSchema : bookValidationSchema;
-
+  // setting initial values for form
   const initialValues = {
     name: "",
     bio: "",
@@ -21,7 +21,7 @@ const Form = ({ type, initialData }) => {
     publishedDate: "",
     ...initialData, // Merge with initial data if available for editing
   };
-
+  //checking the form type and setting onsubmit accordingly
   const onSubmit = (values, { resetForm }) => {
     if (type === "author") {
       if (initialData) {
@@ -41,7 +41,7 @@ const Form = ({ type, initialData }) => {
 
   const formik = useFormik({
     initialValues,
-    validationSchema, // Pass the validation schema
+    validationSchema, // Passing the validation schema
     onSubmit,
   });
 

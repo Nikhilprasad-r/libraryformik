@@ -5,7 +5,7 @@ const BookTable = () => {
   const { books, deleteBook, editBook } = useDataContext();
   const [editMode, setEditMode] = useState(null);
   const [editedBook, setEditedBook] = useState({});
-
+  //handling edit mode
   const handleEdit = (book) => {
     setEditMode(book.id);
     setEditedBook(book);

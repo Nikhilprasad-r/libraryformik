@@ -7,7 +7,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Library from "./Library";
 import Navbar from "./components/Navbar";
 import "./App.css";
-
+// creating navigatable in browser router
 const App = () => {
   return (
     <BrowserRouter>

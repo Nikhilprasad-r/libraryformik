@@ -5,7 +5,7 @@ const AuthorsTable = () => {
   const { authors, deleteAuthor, editAuthor } = useDataContext();
   const [editMode, setEditMode] = useState(null);
   const [editedAuthor, setEditedAuthor] = useState({});
-
+  //handling edit mode
   const handleEdit = (author) => {
     setEditMode(author.id);
     setEditedAuthor(author);

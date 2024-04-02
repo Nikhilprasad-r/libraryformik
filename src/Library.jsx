@@ -12,6 +12,7 @@ const Library = () => {
         </h5>
 
         <ul class="my-4 space-y-3">
+          {/* Looping through available books to display in simple list */}
           {books.map((ele) => (
             <Li ele={ele} />
           ))}
@@ -46,6 +47,7 @@ const Library = () => {
         </h5>
 
         <ul class="my-4 space-y-3">
+          {/* Looping through available authors to display in simple list */}
           {authors.map((ele) => (
             <Li ele={ele} />
           ))}
