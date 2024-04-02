@@ -47,19 +47,19 @@ const Form = ({ type, initialData }) => {
 
   return (
     <form onSubmit={formik.handleSubmit}>
-      <input
-        type="text"
-        name="name"
-        value={formik.values.name}
-        onChange={formik.handleChange}
-        onBlur={formik.handleBlur}
-        placeholder="Name"
-      />
-      {formik.touched.name && formik.errors.name ? (
-        <div>{formik.errors.name}</div>
-      ) : null}
       {type === "author" && (
         <>
+          <input
+            type="text"
+            name="name"
+            value={formik.values.name}
+            onChange={formik.handleChange}
+            onBlur={formik.handleBlur}
+            placeholder="Name"
+          />
+          {formik.touched.name && formik.errors.name ? (
+            <div>{formik.errors.name}</div>
+          ) : null}
           <input
             type="text"
             name="bio"
