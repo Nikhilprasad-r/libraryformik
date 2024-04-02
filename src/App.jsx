@@ -6,6 +6,7 @@ import BookTable from "./BookTable";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Library from "./Library";
 import Navbar from "./components/Navbar";
+import "./App.css";
 
 const App = () => {
   return (
